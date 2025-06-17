@@ -2,13 +2,19 @@ import mysql.connector
 
 def crear_conexion():
     try:
-        conexion = mysql.connector.connect(user = "root", password = "", host = "localhost", database = "chat_26")
+        conexion = mysql.connector.connect(
+			host = "localhost",
+			password = "",
+			user = "root",
+			database = "chat_26"
+		)
+
         print("funciono la conexion")
     except Exception as e:
         print(f"fallo la conexion a mysql: {e}")
     
     return conexion 
-
+'''
 def mostrar_datos(conexion, nickname):
 	try:
 		cursor=conexion.cursor()
@@ -26,3 +32,4 @@ nickname = "dann"
 con = crear_conexion()
 
 mostrar_datos(con, nickname)
+'''
