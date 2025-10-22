@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ejercicio_03">
         <activity
-            android:name=".MainActivity"
+            android:name=".Contacto"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Ejercicio_03">
